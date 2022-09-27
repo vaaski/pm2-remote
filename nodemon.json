@@ -1,7 +1,7 @@
 {
-  "watch": ["src", "types"],
+  "watch": ["backend"],
   "ext": "ts, json",
-  "exec": "node --loader ts-node/esm -r dotenv/config ./src/index.ts",
+  "exec": "npx esmo -r dotenv/config ./backend/index.ts",
   "events": {
     "start": "node -e \"console.clear()\""
   },

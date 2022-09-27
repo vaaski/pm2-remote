@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "ES2020",
+    "sourceMap": false,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "strict": true,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "types": ["@types/node"],
+
+    "baseUrl": ".",
+    "paths": {
+      "/@/*": ["../backend/*"],
+      "/$/*": ["../types/*"]
+    }
+  },
+  "include": ["../backend/**/*.ts", "../types/**/*.d.ts"]
+}
