@@ -1,0 +1,39 @@
+{
+  "name": "pm2-remote",
+  "description": "pm2-remote",
+  "keywords": [],
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "vaaski <admin@vaa.ski>",
+  "scripts": {
+    "start": "node -r dotenv/config dist",
+    "build": "rimraf dist && tsc",
+    "prepare": "npm run build",
+    "dev": "nodemon",
+    "format": "prettier -w **/*.{vue,ts,js,json} --no-error-on-unmatched-pattern"
+  },
+  "type": "module",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/node": "^16.11.62",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.5.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "debug": "^4.3.4"
+  }
+}
